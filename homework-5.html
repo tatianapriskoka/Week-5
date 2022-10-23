@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border: 1px solid black;
+            height: 200px;
+
+        }
+
+        .block {
+            display: flex;
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            flex-grow: 0;
+        }
+
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            border: 1px solid black;
+            width: 60%;
+        }
+
+        aside {
+            display: flex;
+            border: 1px solid black;
+            width: 39%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Шапка</h1>
+    </header>
+    <main>
+        <article>
+            <section class="block">Доп 1</section>
+            <section class="block">Доп 2</section>
+            <section class="block">Доп 3</section>
+        </article>
+        <aside> Боковая </aside>
+    </main>
+
+    <footer>
+        <p>Секция футера</p>
+        <p>Секция футера</p>
+        <p>Секция футера</p>
+        <p>Секция футера</p>
+    </footer>
+</body>
+
+</html>
